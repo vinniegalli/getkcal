@@ -6,6 +6,7 @@ function handleSubmit(event) {
   event.preventDefault()
 
   const gender = getSelectedValue('gender')
+  const name = document.getElementById('name').value
   const age = getInputNumberValue('age')
   const weight = getInputNumberValue('weight')
   const height = getInputNumberValue('height')
@@ -22,7 +23,7 @@ function handleSubmit(event) {
   const gainWeight = maintenance + 450
 
   const layout = `
-  <h2>Aqui está o resultado:</h2>
+  <h2>${name}, aqui está o resultado !</h2>
 
           <div class="result-content">
             <ul>
